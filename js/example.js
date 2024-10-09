@@ -15,19 +15,19 @@ $(document).ready(function(){
         } else if(perc > 0 && perc <= 0.25){
           
           alert.addClass('alert-danger')
-            .html('Poor result! You just got it right ' + good + ' answers on ' + total + '. Try again.');
+            .html('You got' + good + ' out of ' + total + ' answers correct.');
         } else if(perc > 0.25 && perc <= 0.5){
           
           alert.addClass('alert-danger')
-            .html('Just sufficient! You got it right ' + good + ' answers on ' + total + '. You can do better.');
+            .html('You got ' + good + ' out of ' + total + ' answers correct.');
         } else if(perc > 0.5 && perc <= 0.75){
           
           alert.addClass('alert-success')
-            .html('Discreet result! You got it right ' + good + ' answers on ' + total + '. Try again.');
+            .html('You got ' + good + ' out of ' + total + ' answers correct.');
         } else if(perc > 0.75 && perc < 1){
           
           alert.addClass('alert-success')
-            .html('Good result! You got it right ' + good + ' answers on ' + total + '. We are almost there.');
+            .html('You got ' + good + ' out of ' + total + ' answers correct.');
         } else if(perc == 1){
           
           alert.addClass('alert-success')

@@ -19,9 +19,9 @@
 	var messages = {
 		start: 'Start',
 		prev: 'Back',
-		next: 'Forward',
+		next: 'Next',
 		results: 'Go to results',
-		restart: 'Back to the top',
+		restart: 'Try again',
 		error: 'Error',
 		errmsg: [
 			'Please choose an answer.',

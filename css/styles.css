@@ -179,10 +179,11 @@ https://www.geeksforgeeks.org/how-to-center-an-element-using-positionfixed-in-cs
 .arrow {
   position: fixed;
   z-index: 889;
+  filter: drop-shadow(0 0 10px white);
 }
 
 .arrow:hover {
-  filter: drop-shadow(0 0 10px white);
+  filter: drop-shadow(0 0 10px #27368c);
   transition: 0.1s;
 }
 

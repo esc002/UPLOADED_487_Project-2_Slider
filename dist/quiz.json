@@ -4,36 +4,36 @@
       "description": "",
       "answers": [{
         "answer": "Cute",
-        "alert": "<strong>The answer is incorrect.</strong>",
+        "alert": "<strong>This answer is incorrect.</strong>",
         "true": 0
       },
       {
         "answer": "Sometimes",
-        "alert": "<strong>Exactly!</strong>",
+        "alert": "<strong>Correct, nice job!</strong>",
         "true": 1
       },
       {
         "answer": "Punk",
-        "alert": "<strong>The answer is incorrect.</strong>",
+        "alert": "<strong>This answer is incorrect.</strong>",
         "true": 0
       }]
     },
     {
-      "question": "What is the country of origin of Tokidoki?",
+      "question": "What is the country of origin of Tokidoki's main artist?",
       "description": null,
       "answers": [{
         "answer": "France",
-        "alert": "<strong>The answer is incorrect.</strong>",
+        "alert": "<strong>This answer is incorrect.</strong>",
         "true": 0
       },
       {
         "answer": "United States",
-        "alert": "<strong>The answer is incorrect.</strong>",
+        "alert": "<strong>This answer is incorrect.</strong>",
         "true": 0
       },
       {
         "answer": "Italy",
-        "alert": "<strong>Exactly!</strong>",
+        "alert": "<strong>Correct, nice job!</strong>",
         "true": 1
       }]
     },
@@ -42,17 +42,17 @@
       "description": null,
       "answers": [{
         "answer": "Through cute, Japanese-inspired characters and products.",
-        "alert": "<strong>Exactly!</strong>",
+        "alert": "<strong>Correct, nice job!</strong>",
         "true": 1
       },
       {
         "answer": "Wow! Some of the characters look like doughnuts.",
-        "alert": "<strong>The answer is incorrect.</strong>",
+        "alert": "<strong>This answer is incorrect.</strong>",
         "true": 0
       },
       {
         "answer": "By drawing inspiration from classic high-fashion illustrations.",
-        "alert": "<strong>The answer is incorrect.</strong>",
+        "alert": "<strong>This answer is incorrect.</strong>",
         "true": 0
       }]
     },
@@ -61,17 +61,17 @@
       "description": null,
       "answers": [{
         "answer": "Megurine Luka",
-        "alert": "<strong>The answer is incorrect.</strong>",
+        "alert": "<strong>This answer is incorrect.</strong>",
         "true": 0
       },
       {
         "answer": "Rin Kagamine",
-        "alert": "<strong>The answer is incorrect.</strong>",
+        "alert": "<strong>This answer is incorrect.</strong>",
         "true": 0
       },
       {
         "answer": "Hatsune Miku",
-        "alert": "<strong>Exactly!</strong>",
+        "alert": "<strong>Correct, nice job!</strong>",
         "true": 1
       }]
     }],

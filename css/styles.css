@@ -1,0 +1,211 @@
+/* I referenced the following video for the Javascript: https://www.youtube.com/watch?v=s23IvDNNTLU 
+I used my own HTML and CSS with a few function elements (such as the "active" CSS classes) from the video.*/
+
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Catamaran", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #27368c;
+}
+
+header{
+  position: absolute;
+  margin: 25px;
+}
+
+header .brand{
+  color: black;
+  font-size: 16px;
+  font-weight: 800;
+  text-decoration: none;
+  background-color: yellow;
+}
+
+header .brand:hover{
+  color: blue;
+}
+
+section{
+  padding: 100px 250px;
+}
+
+.home{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home .content {
+  z-index: 888;
+  color: black;
+  margin-top: 30px;
+  display: none;
+  padding: 2px 10px;
+}
+
+.home .content.active{
+  display: block;
+}
+
+.home .content h2{
+  font-size: 3.5rem;
+  font-weight: 600;
+  letter-spacing: 5px;
+  line-height: 75px;
+  margin-bottom: 10px;
+}
+
+.home .content p{
+  margin-bottom: 65;
+}
+
+.content{
+  border-radius: 2px;
+  background-color: white;
+}
+
+.content img {
+  max-height: 300px;
+}
+
+/* https://css-tricks.com/couple-takes-sticky-footer/ 
+https://www.geeksforgeeks.org/how-to-center-an-element-using-positionfixed-in-css/
+*/
+
+.slider-nav{
+  z-index: 888;
+  position: fixed;
+  display: flex;
+  text-align: center;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider-nav .nav-btn{
+  width: 12px;
+  height: 12px;
+  background: black;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+  transition: 0.3s ease;
+}
+
+.slider-nav .nav-btn.active {
+  background: yellow;
+}
+
+.slider-nav .nav-btn:not(:last-child){
+  margin-right: 20px;
+}
+
+.slider-nav .nav-btn:hover {
+  transform: scale(1.2);
+}
+
+.image-container{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.image-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  object-fit: cover;
+}
+
+.image-slide.active{
+  opacity: 1;
+}
+
+/* I referenced Mozilla Docs and ChatGPT to help me with the gradient */
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
+  pointer-events: none;
+  z-index: 1;
+}
+
+@media (max-width: 1040px) {
+  header{
+    padding: 12px 20px;
+  }
+  section{
+    padding: 100px 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  .home .content h1{
+    font-size: 2rem;
+    line-height: 60px;
+  }
+}
+
+/* Title Animation */
+.ml12 {
+  font-weight: 900;
+  font-size: 2em;
+  letter-spacing: 2rem;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.arrow {
+  position: fixed;
+  z-index: 889;
+}
+
+.arrow:hover {
+  filter: drop-shadow(0 0 10px white);
+  transition: 0.1s;
+}
+
+.arrow-img {
+  max-height: 10rem;
+}
+
+.arrow-text {
+  font-size: 2em;
+  text-align: center;
+  color: white
+}
+
+.arrow-left {
+  top: 0;
+  left: 0;
+}
+
+.arrow-right {
+  top: 0;
+  right: 0;
+}
+
+.quiz h2{
+  font-size: 12pt;
+}

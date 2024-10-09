@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 2: Slider</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="dist/jquery.quiz.css" />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <a href="#" class="brand"></a>
+    <!--<a href="#" class="brand">TOKIDOKI: Japan Goes GLOBAL.</a>-->
+  </header>
+  <section class="home">
+    <img class="image-slide active" src="images/slide-8.webp">
+    <img class="image-slide" src="images/tokidoki-cover.png">
+    <img class="image-slide" src="images/slide-3.webp">
+    <img class="image-slide" src="images/slide-4.webp">
+    <img class="image-slide" src="images/slide-5.webp">
+    <img class="image-slide" src="images/slide-6.webp">
+    <img class="image-slide" src="images/slide-7.webp">
+    <img class="image-slide" src="images/tokidoki_intro.png">
+    <div class="overlay"></div>
+  <!-- To animate title, I used the following code/plugin: https://tobiasahlin.com/moving-letters/#15 -->
+
+    <div class="content active">
+      <h1 class="ml12" style="text-align: center; font-size: 6em; background-color: yellow;">Tokidoki</h1>
+    </div>
+
+    <div class="content">
+  <!-- To add the emoji confetti, I used the following plugin while following this tutorial: https://www.youtube.com/watch?v=fJnjFSclSXc -->
+      <h2>What is Tokidoki?</h2>
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <p>Tokidoki is a fashion and lifestyle brand inspired by Japanese popular culture and art. The company was created in 2005 by Italian artist Simone Legno.
+            He was first introduced to Japanese culture through anime in the 90s. "Tokidoki" means "sometimes" in Japanese, which Legno explains is because "everyone 
+            waits for moments that change one’s destiny, by chance or by meeting a new person".</p>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <img src="images/legno.jpg" width="100%" height="auto">
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="row">
+        <div class="col-md-12 col-sm-12"> <!--🍜  🍣  🌵  🌸  🍩  🗻-->
+          <h2>What is Kawaii?</h2>
+          <p>"Kawaii", meaning "cute" in Japanese, has grown into a cultural movement with roots in post-war Japan. Since then, Japan has become immensely
+            influential in popular culture. In addition to its marketing strength, "kawaii" has also become a movement. According to Sato's "From Hello Kitty to 
+            Cod Roe Kewpie", cuteness can be subverted as a tool of self-expression and resistance. This idea is prevalent in Tokidoki's inclusion of punk
+            elements and subversive designs.</p>
+            <p class="d-flex justify-content-center">🌸  🌸  🌸</p>
+            <p>According to Merriam-Webster Dictionary; "In Japanese, the word kawaii has a meaning that sits more or less at the juncture of "cute," "tiny," or "lovable." 
+              The cute aesthetic—with its bold, nearly cartoon-like lines and rounded forms—informs a large segment of Japanese popular culture."</p>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="row">
+        <div class="col-md-8 col-sm-12">
+          <h2>Tokidoki Characters</h2>
+          <p>Tokidoki's franchises range from a more traditionally "kawaii" sweets-themed "Donutella", but most are less conventional like a cactus themed "Cactus Friends"
+            or "punkstar". Most notable is the "Unicorno" series, which includes series of unicorn collectibles with very unique designs, many drawing from Japanese culture
+            and other themes. The iconic characters decorate various products such clothing or accessories in addition to figures.
+          </p>
+        </div>
+        <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+          <img src="images/slide-4-2.webp" width="" height="200px;">
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <h2>Tokidoki Collabs</h2>
+          <p>In addition to Japanese culture, some likely influences on Tokidoki include: Japanese mascots such as Hello Kitty, fashion sketch illustrations, and manga.  
+            Since it's formation, Tokidoki has collaborated with countless brands in these areas including Sanrio, haute couture brands and icons, manga, conventions, and more.
+            Some notable examples include Karl Lagerfeld: a fashion designer, Sanrio: the company behind Hello Kitty, and Japanese vocaloid singer: Hatsune Miku.
+          </p>
+        </div>
+        <div class="col-md-6 col-sm-12 d-flex justify-content-center">
+          <img src="images/collab_hk_01.webp" style="height: 250px;">
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <h2>Conclusion</h2>
+          <p>
+            Overall, Tokidoki's success is indicitive of the growing popularity and marketibility of Japanese "kawaii" culture. It also represents how globalized popular culture
+            and art have become, as Tokidoki continuously draws inspiration from cultures accross the globe as well. Tokidoki's increasing popularity with an older audience also
+            represents how "kawaii" is not just for kids and can be used by people as a form of expression as well.
+          </p>
+        </div>
+        <div class="col-md-6 col-sm-12 d-flex justify-content-center">
+          <img src="images/Bambino-series.jpg" style="height: 250px;">
+        </div>
+      </div>
+    </div>
+    <div class="content quiz">
+      <h2>Quiz</h2>
+      <div id="example"></div>
+    </div>
+    <div class="content">
+      <h2>Sources</h2>
+        <ul style="list-style: none;">
+          <li>🌸 “About.” Tokidoki, www.tokidoki.it/pages/about. Accessed 9 Oct. 2024.</li>
+          <li>🌸 “Tokidoki Wiki.” Fandom, tokidoki.fandom.com/wiki/Tokidoki_Wiki. Accessed 9 Oct. 2024. </li>
+          <li>🌸 “On ‘Kawaii’ and the Power of Cute.” Merriam-Webster, Merriam-Webster, www.merriam-webster.com/wordplay/kawaii-cute-japan-origin-meaning. Accessed 9 Oct. 2024. </li>
+          <li>🌸 Sato, Kumiko. “From Hello Kitty to Cod Roe Kewpie: A Postwar Cultural History of Cuteness in Japan.” Association for Asian Studies, 2009, www.asianstudies.org/publications/eaa/archives/from-hello-kitty-to-cod-roe-kewpie-a-postwar-cultural-history-of-cuteness-in-japan/.</li>
+          <li>🌸 “Simone Legno.” Wikipedia, Wikimedia Foundation, 27 Sept. 2024, en.wikipedia.org/wiki/Simone_Legno. </li>
+        </ul>
+    </div>
+    <div class="slider-nav">
+      <div class="nav-btn active"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+    </div>
+  </section>
+
+  <div class="arrow arrow-left"><img class="arrow-img" src="images/arrow.png"><p class="arrow-text">BACK</p></div>
+  <div class="arrow arrow-right"><img class="arrow-img" src="images/arrow-r.png"><p class="arrow-text">NEXT</p></div>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="dist/quiz.json"></script>
+  <script src="dist/jquery.quiz.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/moving-text.js"></script>
+  <script src="js/example.js"></script>
+</body>
+</html>

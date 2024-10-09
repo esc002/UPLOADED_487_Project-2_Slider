@@ -1,0 +1,83 @@
+[{
+    "questions": [{
+      "question": "What does Tokidoki mean in Japanese?",
+      "description": "",
+      "answers": [{
+        "answer": "Cute",
+        "alert": "<strong>The answer is incorrect.</strong>",
+        "true": 0
+      },
+      {
+        "answer": "Sometimes",
+        "alert": "<strong>Exactly!</strong>",
+        "true": 1
+      },
+      {
+        "answer": "Punk",
+        "alert": "<strong>The answer is incorrect.</strong>",
+        "true": 0
+      }]
+    },
+    {
+      "question": "What is the country of origin of Tokidoki?",
+      "description": null,
+      "answers": [{
+        "answer": "France",
+        "alert": "<strong>The answer is incorrect.</strong>",
+        "true": 0
+      },
+      {
+        "answer": "United States",
+        "alert": "<strong>The answer is incorrect.</strong>",
+        "true": 0
+      },
+      {
+        "answer": "Italy",
+        "alert": "<strong>Exactly!</strong>",
+        "true": 1
+      }]
+    },
+    {
+      "question": "How does Tokidoki exemplify the globalization of Japanese culture?",
+      "description": null,
+      "answers": [{
+        "answer": "Through cute, Japanese-inspired characters and products.",
+        "alert": "<strong>Exactly!</strong>",
+        "true": 1
+      },
+      {
+        "answer": "Wow! Some of the characters look like doughnuts.",
+        "alert": "<strong>The answer is incorrect.</strong>",
+        "true": 0
+      },
+      {
+        "answer": "By drawing inspiration from classic high-fashion illustrations.",
+        "alert": "<strong>The answer is incorrect.</strong>",
+        "true": 0
+      }]
+    },
+    {
+      "question": "Which singer has collaborated with Tokidoki?",
+      "description": null,
+      "answers": [{
+        "answer": "Megurine Luka",
+        "alert": "<strong>The answer is incorrect.</strong>",
+        "true": 0
+      },
+      {
+        "answer": "Rin Kagamine",
+        "alert": "<strong>The answer is incorrect.</strong>",
+        "true": 0
+      },
+      {
+        "answer": "Hatsune Miku",
+        "alert": "<strong>Exactly!</strong>",
+        "true": 1
+      }]
+    }],
+    "params": {
+      "intro": 1,
+      "intromessage": "A jQuery plugin that lets you create responsive and beautiful quizzes on the page. "
+    }
+  }]
+  

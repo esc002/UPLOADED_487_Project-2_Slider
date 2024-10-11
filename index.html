@@ -6,25 +6,60 @@
   <title>Project 2: Slider</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-
   <link rel="stylesheet" href="dist/jquery.quiz.css" />
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="">
   <header>
     <a href="#" class="brand"></a>
     <!--<a href="#" class="brand">TOKIDOKI: Japan Goes GLOBAL.</a>-->
   </header>
   <section class="home">
-    <img class="image-slide active" src="images/slide-8.webp">
-    <img class="image-slide" src="images/tokidoki-cover.png">
-    <img class="image-slide" src="images/slide-3.webp">
-    <img class="image-slide" src="images/slide-4.webp">
-    <img class="image-slide" src="images/slide-5.webp">
-    <img class="image-slide" src="images/slide-6.webp">
-    <img class="image-slide" src="images/slide-7.webp">
-    <img class="image-slide" src="images/tokidoki_intro.png">
+      <img class="cover-slide image-slide active" src="images/slide-8.webp">
+      <img class="image-slide" src="images/tokidoki-cover.png">
+      <img class="image-slide" src="images/slide-3.webp">
+      <img class="image-slide" src="images/slide-4.webp">
+      <img class="image-slide" src="images/slide-5.webp">
+      <img class="image-slide" src="images/slide-6.webp">
+      <img class="image-slide" src="images/slide-7.webp">
+      <img class="image-slide" src="images/tokidoki_intro.png">
+    </div>
     <div class="overlay"></div>
+      <div id="particles"></div>
+      <!-- From the following sources: https://vincentgarreau.com/particles.js/, https://www.youtube.com/watch?v=cOAzO8YZJWc, and ChatGPT to help me debug an issue. -->
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <script>
+          document.addEventListener("DOMContentLoaded", function() {
+              console.log("Script is running");
+              particlesJS('particles', {
+                  particles: {
+                      number: { value: 100, density: { enable: true, value_area: 600 } },
+                      color: { value: "#ffffff" },
+                      shape: {
+                          type: "image",
+                          image: { src: "./images/sakura.png", width: 100, height: 100 }
+                      },
+                      opacity: { value: 0.2, random: false },
+                      size: { value: 5, random: true, anim: { enable: true, speed: 5, size_min: 4 } },
+                      move: { enable: true, speed: 1000000, direction: "bottom-left", random: true, straight: false, out_mode: "out" },
+                      line_linked: { enable: false }
+                  },
+                  interactivity: {
+                      detect_on: "canvas",
+                      events: {
+                          onhover: { enable: true, mode: "repulse" },
+                          onclick: { enable: false },
+                          resize: true
+                      },
+                      modes: {
+                          repulse: { distance: 100, duration: 10 }
+                      }
+                  },
+                  retina_detect: true
+              });
+          });
+      </script>
+  
   <!-- To animate title, I used the following code/plugin: https://tobiasahlin.com/moving-letters/#15 -->
 
     <div class="content active">
@@ -35,13 +70,13 @@
   <!-- To add the emoji confetti, I used the following plugin while following this tutorial: https://www.youtube.com/watch?v=fJnjFSclSXc -->
       <h2>What is Tokidoki?</h2>
       <div class="row">
-        <div class="col-md-6 col-sm-12">
+        <div class="col-xl-8 col-md-6 col-sm-12">
           <p>Tokidoki is a fashion and lifestyle brand inspired by Japanese popular culture and art. The company was created in 2005 by Italian artist Simone Legno.
             He was first introduced to Japanese culture through anime in the 90s. "Tokidoki" means "sometimes" in Japanese, which Legno explains is because "everyone 
             waits for moments that change one’s destiny, by chance or by meeting a new person".</p>
         </div>
-        <div class="col-md-6 col-sm-12">
-          <img src="images/legno.jpg" width="100%" height="auto">
+        <div class="col-xl-4 col-md-6 col-sm-12">
+          <img class="img-fluid rounded" src="images/legno.jpg">
         </div>
       </div>
     </div>
@@ -76,28 +111,28 @@
     <div class="content">
       <h2>Tokidoki Collabs</h2>
       <div class="row">
-        <div class="col-md-6 col-sm-12">
+        <div class="col-xl-6 col-md-6 col-sm-12">
           <p>In addition to Japanese culture, some likely influences on Tokidoki include: Japanese mascots such as Hello Kitty, fashion sketch illustrations, and manga.  
             Since it's formation, Tokidoki has collaborated with countless brands in these areas including Sanrio, haute couture brands and icons, manga, conventions, and more.
             Some notable examples include Karl Lagerfeld: a fashion designer, Sanrio: the company behind Hello Kitty, and Japanese vocaloid singer: Hatsune Miku.
           </p>
         </div>
-        <div class="col-md-6 col-sm-12 d-flex justify-content-center">
-          <img src="images/collab_hk_01.webp" style="height: 200px;">
+        <div class="col-xl-6 col-md-6 col-sm-12 d-flex justify-content-center">
+          <img class="img-fluid rounded" style="max-width: 100%; height: auto;" src="images/collab_hk_01.webp">
         </div>
       </div>
     </div>
     <div class="content">
       <h2>Conclusion</h2>
       <div class="row">
-        <div class="col-md-6 col-sm-12">
+        <div class="col-xl-8 col-md-6 col-sm-12">
           <p>
             Tokidoki's success indicates the explosion in popularity of Japanese popular culture, especially "kawaii". Tokidoki's success with older audiences shows that "kawaii" isn't strictly for kids, and can 
             be used as a form of self expression. Furthermore, Tokidoki's tendency to draw from various global cultures emphasizes the globalization of today's pop culture and art.
           </p>
         </div>
-        <div class="col-md-6 col-sm-12 d-flex justify-content-center">
-          <img src="images/Bambino-series.jpg" style="width: 100%;">
+        <div class="col-xl-4 col-md-6 col-sm-12 d-flex justify-content-center">
+          <img class="img-fluid rounded" src="images/Bambino-series.jpg">
         </div>
       </div>
     </div>
@@ -129,11 +164,15 @@
 
   <div class="arrow arrow-left"><img class="arrow-img" src="images/arrow.png"><p class="arrow-text">BACK</p></div>
   <div class="arrow arrow-right"><img class="arrow-img" src="images/arrow-R.png"><p class="arrow-text">NEXT</p></div>
+
+  
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <script src="dist/quiz.json"></script>
   <script src="dist/jquery.quiz.js"></script>
+  <script src="js/particles.min.js"></script>
+  <script src="js/particles-sakura.js"></script>
   <script src="js/main.js"></script>
   <script src="js/moving-text.js"></script>
   <script src="js/example.js"></script>

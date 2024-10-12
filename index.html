@@ -1,3 +1,12 @@
+<!--SOURCES:
+ChatGPT for JS debugging
+Slides JS/CSS: https://www.youtube.com/watch?v=s23IvDNNTLU 
+Quiz Plugin: https://github.com/Reload-Lab/jQuery-quiz
+Particles Plugin: https://vincentgarreau.com/particles.js/
+Particles Plugin: https://www.youtube.com/watch?v=cOAzO8YZJWc
+Moving letters Plugin: https://tobiasahlin.com/moving-letters/#15
+Other: https://www.shecodes.io/athena/24825-how-to-select-a-class-in-javascript 
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +35,7 @@
     </div>
     <div class="overlay"></div>
       <div id="particles"></div>
-      <!-- From the following sources: https://vincentgarreau.com/particles.js/, https://www.youtube.com/watch?v=cOAzO8YZJWc, and ChatGPT to help me debug an issue. -->
+      <!-- From the following sources: https://vincentgarreau.com/particles.js/, https://www.youtube.com/watch?v=cOAzO8YZJWc, and ChatGPT to help me debug some issues. -->
       <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
       <script>
           document.addEventListener("DOMContentLoaded", function() {
@@ -61,13 +70,11 @@
       </script>
   
   <!-- To animate title, I used the following code/plugin: https://tobiasahlin.com/moving-letters/#15 -->
-
     <div class="content active">
       <h1 class="ml12" style="text-align: center; font-size: 6em; background-color: yellow;">Tokidoki</h1>
     </div>
 
     <div class="content">
-  <!-- To add the emoji confetti, I used the following plugin while following this tutorial: https://www.youtube.com/watch?v=fJnjFSclSXc -->
       <h2>What is Tokidoki?</h2>
       <div class="row">
         <div class="col-xl-8 col-md-6 col-sm-12">
@@ -82,7 +89,7 @@
     </div>
     <div class="content">
       <div class="row">
-        <div class="col-md-12 col-sm-12"> <!--🍜  🍣  🌵  🌸  🍩  🗻-->
+        <div class="col-md-12 col-sm-12">
           <h2>What is Kawaii?</h2>
           <p>"Kawaii", meaning "cute" in Japanese, has grown into a cultural movement with roots in post-war Japan. Since then, Japan has become immensely
             influential in popular culture. In addition to its marketing strength, "kawaii" has also become a movement. According to Sato's "From Hello Kitty to 
@@ -162,8 +169,8 @@
     </div>
   </section>
 
-  <div class="arrow arrow-left"><img class="arrow-img" src="images/arrow.png"><p class="arrow-text">BACK</p></div>
-  <div class="arrow arrow-right"><img class="arrow-img" src="images/arrow-R.png"><p class="arrow-text">NEXT</p></div>
+  <div class="arrow arrow-left"><img class="arrow-img" src="images/arrow.png"><p class="arrow-text"><strong>BACK</strong></p></div>
+  <div class="arrow arrow-right"><img class="arrow-img" src="images/arrow-R.png"><p class="arrow-text"><strong>NEXT</strong></p></div>
 
   
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>

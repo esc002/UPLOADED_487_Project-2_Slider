@@ -175,7 +175,7 @@ https://www.geeksforgeeks.org/how-to-center-an-element-using-positionfixed-in-cs
 
 @media (max-width: 560px) {
   .home .content h1{
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 60px;
   }
 }
@@ -183,13 +183,13 @@ https://www.geeksforgeeks.org/how-to-center-an-element-using-positionfixed-in-cs
 /* Title Animation */
 .ml12 {
   font-weight: 900;
-  font-size: 2em;
-  letter-spacing: 2rem;
+  font-size: 80pt;
+  letter-spacing: 10pt;
 }
 
 .ml12 .letter {
   display: inline-block;
-  line-height: 1em;
+  line-height: 80pt;
 }
 
 .arrow {
